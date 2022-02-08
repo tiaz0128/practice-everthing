@@ -1,0 +1,33 @@
+.text {
+  padding: 2.5em;
+}
+
+.alert-container {
+  position: fixed;
+  top: 5vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.alert {
+  pointer-events: none;
+  background-color: black;
+  color: white;
+  border-radius: .25em;
+  padding: .75em;
+  margin-bottom: .5rem;
+  transition: opacity 500ms ease-in-out;
+  opacity: 1;
+}
+
+.alert:last-child{
+  margin: 0;
+}
+
+.alert.hide {
+  opacity: 0;
+}
