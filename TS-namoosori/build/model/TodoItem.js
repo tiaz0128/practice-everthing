@@ -10,7 +10,7 @@ class TodoItem {
         this.complete = complete;
     }
     printDetail() {
-        console.log(`${this.complete ? '⭕ ' : '❌ '}${this.id}\t${this.task}\t`);
+        console.log(`${this.complete ? "✅ " : "⬛ "}${this.id}\t${this.task}\t`);
     }
 }
 exports.default = TodoItem;

@@ -10,7 +10,7 @@ class TodoItem {
   }
 
   printDetail() {
-    console.log(`${this.complete ? '⭕ ' : '❌ '}${this.id}\t${this.task}\t`);
+    console.log(`${this.complete ? "✅ " : "⬛ "}${this.id}\t${this.task}\t`);
   }
 }
 
